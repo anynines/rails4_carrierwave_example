@@ -13,7 +13,6 @@
 
 //= require jquery
 //= require jquery_ujs
-
 //= require jquery.ui.widget
 
 //= require jquery.Jcrop
@@ -33,3 +32,4 @@
 
 //= require twitter/bootstrap
 //= require bootstrap-image-gallery.min
+
