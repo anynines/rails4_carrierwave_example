@@ -1,44 +1,50 @@
-# Rails 3.2.3 + Carrierwave + jQuery File Upload 
+# Rails 3.2.13 + Carrierwave + a9s Swift Service + PostgreSQL
 
 A small application that demonstrates the work of these programs together.
+This application is a customized version of n0ne's Rails-Carrierwave-jQuery-File-Upload application which can be found here: https://github.com/n0ne/Rails-Carrierwave-jQuery-File-Upload .
 
-More information about [jQuery File Upload](http://blueimp.github.com/jQuery-File-Upload/) or on [Github](https://github.com/blueimp/jQuery-File-Upload).
+You can use this application for a test run on [anyines.com](http://anyines.com) .
 
-We use [slimbox2](http://www.digitalia.be/software/slimbox2) plugin for viewing pictures.
-And we use plugin [jCrop](http://deepliquid.com/content/Jcrop.html) for editing pictures.
 
-Thanx to [Shaunak Vairagare](https://github.com/shaunakv1/) for the [S3 version](https://github.com/shaunakv1/Rails-Carrierwave-S3-jQuery-File-Upload).
+### Install Codebase
 
-## Getting Started
+Clone the git repository
 
-* Clone git:
+    $ git clone https://github.com/anynines/rails4_carrierwave_example.git
+    $ cd rails4_carrierwave_example
+    $ bundle
 
-          git clone git@github.com:n0ne/Rails-Carrierwave-jQuery-File-Upload.git
+Create a database and run migrations
 
-* Change folder:
+    $ rake db:create db:migrate
 
-          cd Rails-Carrierwave-jQuery-File-Upload
+Run the ```rails server```
 
-* Install gems:
+    $ bundle exec rails s
 
-          bundle install
+### View Application
 
-* Make database:
+From a web browser access the site via [localhost:3000](http://localhost:3000)
 
-          rake db:migrate
+## Deploy the application to anynines
 
-* Upgrade bootstrap files:
+Install the a9s gem
 
-          rails g bootstrap:install -f
+    $ gem install a9s
 
-* Start server:
+Edit the deployment manifest
 
-          rails s
+    $ cp manifest.yml.example manifest.yml
+    $ vim manifest.yml -> exchange all occurences of your_app_name with your desired application identifier
 
-* Open browser:
+The https://github.com/cloudfoundry/heroku-buildpack-ruby.git buildpack is referenced within the provided ```manifest.yml.example```. This buildpack is needed to support Rails 4 and Ruby 2.
 
-          http://localhost:3000/galleries
+Deploy the application 
 
-## Features
+    $ cf push
 
-- (20-Mar-2013): Can now add images to a gallery when it's "new" (ie. before it has been saved)
+## Test suite
+
+RSpec and Capybara used for Integration and Unit tests
+
+    $ rspec
