@@ -16,6 +16,7 @@
 
 
 /public/uploads/
-
+/public/assets/
+manifest.yml
 Fileupload.sublime-project
 Fileupload.sublime-workspace
