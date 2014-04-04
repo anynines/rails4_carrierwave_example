@@ -35,6 +35,7 @@ group :production do
   gem 'fog'
   gem 'pg'
   gem 'rails_12factor'
+  gem 'a9s_swift' # a9s swift utilities
 end
 
 # To use ActiveModel has_secure_password
