@@ -1,0 +1,12 @@
+---
+applications:
+- name: your_app_name
+  memory: 512M
+  instances: 1
+  host: your_app_name
+  domain: de.a9sapp.eu
+  path: .
+  buildpack: https://github.com/cloudfoundry/heroku-buildpack-ruby.git
+  services:
+    - postgresql-your_app_name
+    - swift-your_app_name

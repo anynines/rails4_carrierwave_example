@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '3.2.17'
+gem 'rails', '3.2.18'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -26,7 +26,7 @@ group :assets do
   gem 'uglifier'
 
   gem 'twitter-bootstrap-rails'
-  
+
 end
 
 gem 'jquery-rails'

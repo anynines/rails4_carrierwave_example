@@ -6,6 +6,7 @@ applications:
   host: your_app_name
   domain: de.a9sapp.eu
   path: .
+  buildpack: https://github.com/cloudfoundry/heroku-buildpack-ruby.git
   services:
     postgresql-your_app_name:
       label: postgresql
@@ -17,4 +18,3 @@ applications:
       provider: core
       version: '1.0'
       plan: free
-  buildpack: https://github.com/cloudfoundry/heroku-buildpack-ruby.git
