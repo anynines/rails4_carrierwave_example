@@ -1,13 +1,7 @@
-GIT
-  remote: https://github.com/anynines/a9s_swift.git
-  revision: 131193b9451f95a2109b97d2ddf4bf1a93ee069c
-  branch: openstackdriver
-  specs:
-    a9s_swift (0.2.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
+    a9s_swift (0.2.0)
     actionmailer (3.2.18)
       actionpack (= 3.2.18)
       mail (~> 2.5.4)
@@ -182,7 +176,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  a9s_swift!
+  a9s_swift
   carrierwave
   coffee-rails
   fog

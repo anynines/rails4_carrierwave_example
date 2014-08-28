@@ -32,13 +32,12 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'a9s_swift', :git => 'https://github.com/anynines/a9s_swift.git', :branch => 'openstackdriver'
+gem 'a9s_swift'
 
 group :production do
   gem 'fog'
   gem 'pg'
   gem 'rails_12factor'
-#  gem 'a9s_swift' # a9s swift utilities
 end
 
 # To use ActiveModel has_secure_password
