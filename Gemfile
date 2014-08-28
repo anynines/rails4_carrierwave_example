@@ -8,6 +8,8 @@ gem 'rails', '3.2.18'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
   gem 'sqlite3'
+  gem 'pry'
+  gem 'pry-byebug'
 end
 
 gem 'rmagick', :require => 'RMagick'
@@ -30,12 +32,13 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'a9s_swift', :git => 'https://github.com/anynines/a9s_swift.git', :branch => 'openstackdriver'
 
 group :production do
   gem 'fog'
   gem 'pg'
   gem 'rails_12factor'
-  gem 'a9s_swift' # a9s swift utilities
+#  gem 'a9s_swift' # a9s swift utilities
 end
 
 # To use ActiveModel has_secure_password
