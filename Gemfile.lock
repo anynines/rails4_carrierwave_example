@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/capistrano/rbenv.git
+  revision: 2332dba20ec1f8c8cb7a9cd38770d71f5c4bf5a9
+  specs:
+    capistrano-rbenv (2.0.2)
+      capistrano (~> 3.1)
+      sshkit (~> 1.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -34,6 +42,16 @@ GEM
     byebug (2.7.0)
       columnize (~> 0.3)
       debugger-linecache (~> 1.2)
+    capistrano (3.1.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (~> 1.3)
+    capistrano-bundler (1.1.3)
+      capistrano (~> 3.1)
+      sshkit (~> 1.2)
+    capistrano-rails (1.1.2)
+      capistrano (~> 3.1)
+      capistrano-bundler (~> 1.1)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -47,6 +65,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    colorize (0.7.3)
     columnize (0.8.9)
     commonjs (0.2.7)
     debugger-linecache (1.2.0)
@@ -154,6 +173,10 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.9)
+    sshkit (1.5.1)
+      colorize
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -177,6 +200,10 @@ PLATFORMS
 
 DEPENDENCIES
   a9s_swift
+  capistrano (~> 3.1.0)
+  capistrano-bundler (~> 1.1.2)
+  capistrano-rails (~> 1.1.1)
+  capistrano-rbenv!
   carrierwave
   coffee-rails
   fog
