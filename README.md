@@ -1,9 +1,9 @@
 # Rails 3.2.18 + Carrierwave + a9s Swift Service + PostgreSQL
 
-A small application that demonstrates the work of these programs together.
-This application is a customized version of n0ne's Rails-Carrierwave-jQuery-File-Upload application which can be found here: https://github.com/n0ne/Rails-Carrierwave-jQuery-File-Upload .
+We wrote a small application that demonstrates how Rails 3.2.13, Carrierwave, the a9s Swift Service and PostgreSQL work together.
+This application is an adaptation of n0ne's [Rails-Carrierwave-jQuery-File-Upload application](https://github.com/n0ne/Rails-Carrierwave-jQuery-File-Upload).
 
-You can use this application for a test run on [anyines.com](http://anyines.com) .
+You can use this application for a test run on [anyines.com](http://anyines.com).
 
 
 ### Install Codebase
@@ -24,7 +24,7 @@ Run the ```rails server```
 
 ### View Application
 
-From a web browser access the site via [localhost:3000](http://localhost:3000)
+You can access the application using a browser: [localhost:3000](http://localhost:3000)
 
 ## Deploy the application to anynines
 
